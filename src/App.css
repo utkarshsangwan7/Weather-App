@@ -1,0 +1,13 @@
+.Container{
+  height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+
+.body-container{
+  height: 100%;
+  margin: 0;
+  display: grid;
+}
