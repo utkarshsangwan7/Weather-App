@@ -1,6 +1,10 @@
 import React from 'react';
 import './map.css';
-import MapBox from '!mapbox-gl';
+// import MapBox from '!mapbox-gl';
+import MapBox from 'mapbox-gl/dist/mapbox-gl';
+import MapboxWorker from 'mapbox-gl/dist/mapbox-gl-csp-worker';
+
+MapBox.workerClass = MapboxWorker;
 import ReactDOM from 'react-dom';
 MapBox.accessToken='pk.eyJ1IjoidXRrYXJzaHNhbmd3YW4iLCJhIjoiY2tvNnVxeDduMGl3MjJvcGRqaDkwMW04ZCJ9.9NttZj-5E3WNXo16znKaOw';
 
