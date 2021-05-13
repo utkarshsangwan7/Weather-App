@@ -3,7 +3,6 @@ import Header from './components/Header/Header';
 import Body from './components/Body/Body';
 import Map from './components/Map/map';
 import './App.css';
-
 class App extends React.Component{
     constructor(){
         super();
@@ -29,6 +28,7 @@ class App extends React.Component{
         })
         .then(res=>res.json())
         .then(response=>{
+            console.log(response);
             this.setState({location:response.location,current:response.current,flag:1},()=>{
             });   
         })

@@ -4,6 +4,7 @@ import './Body.css';
 
 
 const Body = ({current})=>{
+    delete current.condition;
     const keys = Object.keys(current);
     const values = Object.values(current);
 
